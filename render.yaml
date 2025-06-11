@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: courseDown 
+    plan: pro
+    env: docker
+    dockerfilePath: Dockerfile
+    repo: https://github.com/chutpagludotnet/medusaCourseDown
+    branch: main
+    autoDeploy: false
+    region: virginia  # Correct region value for Virginia
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: OWNER
+        sync: false
+      - key: OWNER_USERNAME
+        sync: false
+      - key: AUTH_USERS
+        sync: false
+      - key: CHANNELS
+        sync: false
+      - key: LOG_CHANNELS
+        sync: false
+      - key: BACKUP_LOG_CHANNELS
+        sync: false
+      # - key: WEBHOOK
+      #   sync: false
+      - key: PORT
+        value: 8000

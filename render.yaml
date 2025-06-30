@@ -4,7 +4,7 @@ services:
     plan: pro
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/chutpagludotnet/medusaCourseDown
+    repo: https://github.com/greatautomate/ou
     branch: main
     autoDeploy: false
     region: virginia  # Correct region value for Virginia
